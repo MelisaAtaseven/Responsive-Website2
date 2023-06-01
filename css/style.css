@@ -1,0 +1,416 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.temizle {
+  clear: both;
+}
+
+header {
+  background-color: rgba(255,255,255,.9);
+  position: sticky;
+  top:0;
+  z-index:99;
+}
+
+#ust {
+  width: 85%;
+  margin: auto;
+}
+
+#logo {
+  width: 25%;
+  float: left;
+  padding: 15px 0;
+}
+
+#logo img {
+  width: auto;
+  height: 50px;
+  max-width: 100%;
+}
+
+nav {
+  width: 75%;
+  float: left;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-top: 30px;
+  margin-left: 25px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #cd0000;
+}
+
+#slayt {
+  height: 65vh;
+  margin-top:3px;
+  box-shadow: 0px 0px 5px #aaa;
+  position: relative;
+}
+
+#slayt img {
+  width: 100%;
+  height: 65vh;
+}
+
+#slayt h3 {
+  background-color: rgb(205,0,0,.85);
+  color:#fff;
+  font-size:1.3rem;
+  position: absolute;
+  top:45%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 60px;
+  border-radius: 30px;
+}
+
+#projeler, #hakkimizda, #iletisim {
+  width: 85%;
+  margin: auto;
+  margin-top: 80px;
+  font-size: 1.1rem;
+}
+
+#hakkimizda {
+  margin-top: 60px;
+}
+
+#harita {
+  margin-top:80px;
+}
+
+.baslik {
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+#resimler {
+  margin-top: 30px;
+  margin-left:-20px;
+}
+
+.resim {
+  width:25%;
+  float:left;
+  padding-left:20px;
+  margin-bottom:20px;
+  position:relative;
+}
+
+.resim img {
+  width:100%;
+}
+
+.resim h3 {
+  position:absolute;
+  top:0;
+  left:20;
+  background:rgba(0,0,0,.85);
+  color:#fff;
+  font-size:1.05rem;
+  font-weight:normal;
+  padding: 10px 40px 10px 15px;
+}
+
+#hakkimizda p {
+  line-height:1.5;
+  text-align:justify;
+}
+
+#ekipler {
+  margin-top: 50px;
+}
+
+.ekip {
+  width:25%;
+  float:left;
+  padding-left:20px;
+}
+
+.ekip:first-child {
+  padding-left:0px;
+}
+
+.ekip img {
+  width:100%;
+  height:250px;
+  filter:grayscale(80%);
+}
+
+.ekip img:hover {
+  filter:grayscale(0);
+}
+
+.ekip h2 {
+  font-size:1.4rem;
+  margin:10px 0px;
+}
+
+.ekip p {
+  text-align:left!important;
+  margin-bottom:20px;
+}
+
+.ekip a {
+  display:block;
+  width:100%;
+  color: #333;
+  font-size:1.1rem;
+  background-color:#eee;
+  text-align:center;
+  text-decoration:none;
+  padding: 10px;
+}
+
+.ekip a:hover {
+  background-color:#ddd;
+}
+
+#iletisim input {
+  display:block;
+  border:1px solid #ccc;
+  margin-top:15px;
+  height:40px;
+  font-size: 1.1rem;
+  padding-left:10px;
+  width: 100%;
+}
+
+#iletisim input:focus {
+  outline:0;
+  border:1px solid #aaa;
+}
+
+#iletisim button {
+  background-color:#000;
+  color:#fff;
+  margin-top:30px;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border:0;
+  cursor:pointer;
+}
+
+#iletisim button:hover {
+  background-color:#cd0000;
+}
+
+#harita iframe {
+  width: 100%;
+  height: 50vh;
+  border: 0;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  color: #fff;
+  padding: 40px 0;
+}
+
+
+@media (max-width: 1399px) {
+  .ekip img {
+    height:200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  #ust, #projeler, #hakkimizda, #iletisim {
+    width: 90%;
+  }
+  #slayt, #slayt img {
+    height: 60vh;
+  }
+  .ekip img {
+    height:170px;
+  }
+}
+
+@media (max-width: 991px) {
+  #slayt, #slayt img {
+    height: 50vh;
+  }
+  #projeler, #harita, #iletisim {
+    margin-top:60px;
+  }
+  #hakkimizda {
+    margin-top:40px;
+  }
+  .resim {
+    width:33.33333333%;
+  }
+  .ekip h2 {
+    font-size:1.3rem;
+  }
+  .ekip img {
+    height:150px;
+  }
+}
+
+@media (max-width: 767px) {
+  #logo {
+    width: 100%;
+    float: none;
+    text-align:center;
+  }
+  #logo img {
+    height:40px;
+  }
+  header {
+    position: static;
+  }
+  header nav {
+    width: 100%;
+    float: none;
+    margin-bottom:15px;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    padding-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+  #ust {
+    width: 95%;
+  }
+  #projeler, #hakkimizda, #iletisim {
+    width: 95%;
+    font-size:1rem;
+  }
+  #projeler, #harita {
+    margin-top:40px;
+  }
+  #hakkimizda, #iletisim {
+    margin-top:20px;
+  }
+  #slayt, #slayt img {
+    height: 40vh;
+  }
+  #slayt h3 {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+  }
+  .baslik {
+    font-size:1.3rem;
+  }
+  .resim {
+    width:50%;
+  }
+  .ekip {
+    width:50%;
+    margin-bottom:30px;
+  }
+  .ekip:nth-child(3) {
+    padding-left: 0px;
+  }
+  .ekip img {
+    height: 200px;
+    filter:grayscale(0);
+  }
+  input::placeholder {
+    font-size:0.9rem;
+  }
+  #harita iframe {
+    height:40vh;
+  }
+  footer {
+    font-size:1rem;
+    padding:30px 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  #logo img {
+    height:35px;
+  }
+  nav ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  #slayt, #slayt img {
+    height: 30vh;
+  }
+  #slayt h3 {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+  .baslik {
+    font-size:1.2rem;
+  }
+  .resim {
+    width:50%;
+  }
+  .ekip img {
+    height: 150px;
+  }
+  .ekip h2 {
+    font-size:1.2rem;
+  }
+  #harita iframe {
+    height:30vh;
+  }
+  footer {
+    font-size:0.9rem;
+    padding:20px 0px;
+  }
+}
+
+@media (max-width: 410px) {
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+  #slayt h3 {
+    display:none;
+  }
+  .baslik {
+    font-size:1.1rem;
+  }
+  .resim {
+    width:100%;
+    float:none;
+  }
+  .ekip {
+    width:100%;
+    float:none;
+    padding-left:0px;
+  }
+  .ekip img {
+    height: auto;
+  }
+}
+
+
